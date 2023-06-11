@@ -1,0 +1,27 @@
+.logo {
+    text-align: center;
+ }
+ 
+ .logo img {
+    display: inline-block;
+ }
+ .center {
+    text-align: center;
+ }
+ .list {
+    text-align: center;
+ }
+ 
+ ul {
+    list-style-position: inside;
+ }
+ 
+ li {
+    text-indent: -24px;
+    padding-left: 24px;
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+ }
+ .text_color {
+    color: blue;
+ }

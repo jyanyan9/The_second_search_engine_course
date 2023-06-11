@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <title>{{query}}的查询结果</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/answer.css">
+</head>
+<body style="background-image: url('../static/image/bg.jpg');background-size:100% 100%;background-attachment:fixed;">
+    <div class="logo" style="position:relative; top:80px;">
+        <a href="/"><img src="../static/image/logo.jpg" alt="Logo" style="height: 206px;width:400px;"/></a>
+    </div>
+    <div class="center" style="position:relative; top:20px;">
+        <h1><p style="color: rgb(227, 234, 248);">含有搜索关键词 "{{query}}"的文件列表如下</p></h1>
+        {% if results %}
+            <ul>
+            {% for item in results %}
+                <li><b>{{item}}</b></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p style="color: red;"><b>没有找到文件，请重新输入关键词查找</b></p>
+        {% endif %}
+    </div>
+</body>
+</html>
